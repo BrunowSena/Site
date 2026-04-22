@@ -45,6 +45,42 @@
             <p>Primeiro Site que Fiz</p>
         </article>
     </section>
+    
+    <section id="habiliades">
+        <h2>Habilidades e Tecnologias</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Iniciante</td>
+                    <td>Capaz de construir estruturas de página web semânticas e responsivas</td>
+                </tr>
+
+                 <tr>
+                    <td>CSS</td>
+                    <td>Iniciante</td>
+                    <td>Experiência com flexbox</td>
+                </tr>
+
+                <tr>
+                    <td>JS</td>
+                    <td>Iniciante</td>
+                    <td>Codificação em JavaScript</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
 
     <footer>
         <p>Todos os diretiros Reservados @ Bruno Sena</p>
@@ -52,11 +88,37 @@
         <section id="Contato">
             <h2>Contato</h2>
             <p>Tem um projeto em mente entre em contato</p>
-            <address>
-                Email: <a href="mailto:contato.brunosena@gmail.com">contato.brunosena@gmail.com</a>
+            
+            <form action="">
+                
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Nome: </label>
+                <input type="tel" id="telefone" name="telefone"><br>
+
+                <label for="assunto">Assuntos: </label>
+                <select name="assunto" id="assunto">
+                    <option value="branco"></option>
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select><br> 
+
+                <label for="mensagem">Mensagem: </label><br>
+                <textarea name="mensagem" id="mensagem" required cols="30" rows="10"></textarea>
+
+                <input type="checkbox" name="inscricao" id="inscricao">
+                <label for="inscricao">Deseja receber minha newslatter? Fique por Dentro</label>
+
                 <br>
-                Whatsapp: <a href="tel:+5547992906260">47 992906260</a>
-            </address>
+
+                <input type="submit" value="Enviar Mensagem">
+
+            </form>
         </section>
     </footer>
 
